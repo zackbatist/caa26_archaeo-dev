@@ -1,154 +1,182 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>archaeo.social and archaeo.dev</title>
+  <link href="poster.css" rel="stylesheet" />
+</head>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+<body>
+<div id="page">
 
-    <title>archaeo.social and archaeo.dev</title>
+  <header>
+    <hgroup>
+      <h1>
+        <span class="logotype" id="logotype-archaeo-social">archaeo.social</span>
+        &
+        <span class="logotype" id="logotype-archaeo-dev">archaeo.dev</span>
+      </h1>
+      <p class="subtitle">Decentralised, collective digital infrastructure for archaeology</p>
+    </hgroup>
+    <img id="header-logo" src="images/archaeo-social-logo.svg" alt="archaeo.social logo" />
+  </header>
 
-    <link href="poster.css" rel="stylesheet" />
-
-  </head>
-
-  <body>
-
-    <div id="page">
-
-      <header>
-        <!-- TODO: our logo -->
-        <hgroup>
-          <h1>
-            <span class="logotype" id="logotype-archaeo-social">archaeo.social</span> 
-            &
-            <span class="logotype" id="logotype-archaeo-dev">archaeo.dev</span>
-          </h1>
-          <p class="subtitle">Decentralised, collective digital infrastructure for archaeology</p>
-        </hgroup>
-        <img id="header-logo" src="images/archaeo-social-logo.svg" alt="archaeo.social logo" />
-      </header>
-      <section id="abstract">
-  <h1>Reclaiming the scholarly social web</h1>
-  <main id="abstract-body">
-    <h2>Who owns your research infrastructure?</h2>
-    <p>
-      The nearly overnight collapse of 'Science Twitter' in 2022 destroyed a fantastic, interdisciplinary scholarly network born from many years of community engagement. This disruption exposed a vulnerability many had overlooked: scholarly communication built on corporate platforms is fragile by design. Enshittification, data colonialism, and hostile acquisitions are not edge cases &ndash; they are features of the system.
-    </p>
-    <p>
-      The lesson was clear: we can't afford to outsource scientific discourse to private corporations. Yet most of our digital infrastructure, including social media, code sharing and collaboration tools, still belongs to a handful of tech giants.
-    </p>
-    <h2>archaeo.social &amp; archaeo.dev are different</h2>
-    <p>
-      We are a community-run, open-source collective providing decentralised digital services built by archaeologists, for archaeologists. Our infrastructure is resilient, transparent, and collectively owned, with hundreds of users and several scholarly societies drawing value from it and providing support.
-    </p>
-    <p>
-      Pooling resources across our community makes this sustainable. We invite CAA members to use our services &ndash; and help shape their future!
-    </p>
-  </main>
-
-</section>
-
-      <section id="guestbook">
-        <hgroup>
-          <h1>Already there?</h1>
-          <p class="subtitle">Share your Fediverse address, Matrix handle or old-school blog with the CAA community:</p>
-        </hgroup>
-        <div id="guestbook-signatures"></div>
-      </section>
-
-      <section class="service" id="fediverse">
-        <h1>The Fediverse</h1>
-      <!-- TODO: Mastodon blurb -->
-      <p>Mastodon is a free and open-source software platform for decentralized social networking and microblogging. It is one of the main alternative to Twitter/X. archaeo.social is a Mastodon instance for archaeologists, ancient historians and anyone interested in scholarly communication about the human past.</p>
-      <p>Join at:&nbsp;<a href="https://archaeo.social">archaeo.social</a></p>
-      </section>
-
-      <section class="service" id="matrix">
-        <h1>Matrix Chat</h1>
-        <!-- TODO: matrix blurb -->
-        <p>Matrix is a free and open-source, decentralized, instant-messaging platform. It is one of the main alternatives to Whatsapp or Slack, with a focus on user privacy and encryption. Communities such as Young Researchers in Archaeometry are already present on our matrix server.</p>
-        <p>Join at:&nbsp;<a href="https://chat.archaeo.social">chat.archaeo.social</a></p>
-      </section>
-
-      <section class="service" id="forgejo">
-        <h1>Git Forge</h1>
-        <!-- TODO: forgejo blurb -->
-        <p>Forgejo is a git forge and a software development platform. It is a free and open-source, collectively-governed, alternative to GitHub. Forgejo provides a features-packed collaboration platform for developers with an intuitive and familiar UI. A FOSS platform is the idea companion to Open Science.</p>
-        <p>Join at:&nbsp;<a href="https://forge.archaeo.dev">forge.archaeo.dev</a></p>
-      </section>
-
-      <section class="service" id="webring">
-        <h1>Webring</h1>
-        <!-- TODO: webring blurb -->
-        <p>If your eyes landed on this section first, congrats! you are old enough to remember the web 1.0. Webrings were a way to connect websites that shared a similar theme. This webring can also help in discovering new archaeology blogs around the web. Come join us, we have some hand-crafted old-style buttons too!</p>
-        <p>Join at:&nbsp;<a href="https://webring.archaeo.social">webring.archaeo.social</a></p>
-      </section>
-
-      <section class="service" id="hedgedoc">
-        <h1>Collaborative Editing</h1>
-        <!-- TODO: hedgedoc blurb -->
-        <p>Hedgedoc is an open-source, web-based, collaborative note-taking editor in Markdown format and a lightweight alternative to Google Docs. Hedgedoc can be used to easily collaborate with others on notes, graphs, and even presentations, all in real time.</p>
-        <p>Join at:&nbsp;<a href="https://md.archaeo.dev">md.archaeo.dev</a></p>
-      </section>
-
-      <section class="service" id="more-services">
-        <h1>More to come...</h1>
-        <!-- TODO: you-tell-us blurb -->
-        <p>We aim to provide open source, decentralised, and/or federated software that facilitates scholarly communication. If you have other ideas for future services that we can host, suggest it!</p>
-        <p>Suggest at:&nbsp;<a href="https://github.com/orgs/archaeo-social/discussions">github.com/orgs/archaeo-social/discussions</a></p>
-      </section>
-
-      <footer>
-  <section id="authors">
-    <div id="author-list">
-      <div class="author">
-        <img src="https://mstdn.archaeo.social/accounts/avatars/000/000/002/original/54f95f7766666700.jpg" alt="Joe Roe" />
-        <span class="author-name">Joe Roe</span>
-        <span class="author-affiliation">University of Copenhagen</span>
-        <a class="author-fediverse" href="https://archaeo.social/@joeroe">@joeroe@archaeo.social</a>
-      </div>
-      <div class="author">
-        <img src="https://mstdn.archaeo.social/accounts/avatars/109/333/035/928/545/004/original/28c5be5aa96d6bb0.jpg" alt="Zack Batist" />
-        <span class="author-name">Zack Batist</span>
-        <span class="author-affiliation">McGill University</span> 
-        <a class="author-fediverse" href="https://archaeo.social/@zackbatist">@zackbatist@archaeo.social</a>
-      </div>
-      <div class="author">
-        <img src="https://cdn.masto.host/genomicsocial/accounts/avatars/109/309/590/728/622/207/original/524da371c7745a72.png" alt="James Fellows Yates" />
-        <span class="author-name">James Fellows Yates</span>
-        <span class="author-affiliation">nf-core &amp; SPAAM</span>
-        <a class="author-fediverse" href="https://genomic.social/@jfy133">@jfy133@genomic.social</a>
-      </div>
-      <div class="author">
-        <img src="https://mstdn.archaeo.social/accounts/avatars/000/001/636/original/753f9926c326fa11.jpg" alt="Andrea Titolo" />
-        <span class="author-name">Andrea Titolo</span>
-        <span class="author-affiliation">University of Bologna</span>
-        <a class="author-fediverse" href="https://archaeo.social/@andreatitolo">@andreatitolo@archaeo.social</a>
-      </div>
-      <div class="author" id="opencollective-author">
-        <img src="https://opencollective.com/static/images/opencollective-icon.svg" alt="Open Collective" />
-        <span class="author-name">The archaeo.social Community</span>
-        <span class="author-affiliation">Contributors via Open Collective</span>
-        <a class="author-opencollective" href="https://opencollective.com/archaeo-social">opencollective.com/archaeo-social</a>
-      </div>
-    </div>
+  <section id="abstract">
+    <h1>Reclaiming the scholarly social web</h1>
+    <main id="abstract-body">
+      <h2>Who owns your research infrastructure?</h2>
+      <p>
+        The nearly overnight collapse of 'Science Twitter' in 2022 destroyed a fantastic,
+        interdisciplinary scholarly network born from many years of community engagement.
+        This disruption exposed a vulnerability many had overlooked: scholarly communication
+        built on corporate platforms is fragile by design. Enshittification, data colonialism,
+        and hostile acquisitions are not edge cases &ndash; they are features of the system.
+      </p>
+      <p>
+        The lesson was clear: we can't afford to outsource scientific discourse to private
+        corporations. Yet most of our digital infrastructure, including social media, code
+        sharing and collaboration tools, still belongs to a handful of tech giants.
+      </p>
+      <h2>archaeo.social &amp; archaeo.dev are different</h2>
+      <p>
+        We are a community-run, open-source collective providing decentralised digital
+        services built by archaeologists, for archaeologists. Our infrastructure is resilient,
+        transparent, and collectively owned, with hundreds of users and several scholarly
+        societies drawing value from it and providing support.
+      </p>
+      <p>
+        Pooling resources across our community makes this sustainable. We invite CAA members
+        to use our services &ndash; and help shape their future!
+      </p>
+    </main>
   </section>
 
-
-  <section id="service-logos">
-    <img id="caa2026-logo" src="images/caa2026_logo.png" alt='CAA 2026, 31 March – 4th April, University of Vienna, Austria, "It&apos;s all about people"' />
-    <div class="brand-logos">
-      <img id="mastodon-logo" src="images/mastodon.svg" alt="Mastodon" />
-      <img id="matrix-logo" src="images/matrix.svg" alt="Matrix" />
-      <img id="forgejo-logo" src="images/forgejo.svg" alt="Forgejo" />
-    </div>
+  <section id="guestbook">
+    <hgroup>
+      <h1>Already there?</h1>
+      <p class="subtitle">Share your Fediverse address, Matrix handle or old-school blog with the CAA community:</p>
+    </hgroup>
+    <div id="guestbook-signatures"></div>
   </section>
 
-</footer>
+  <section class="service" id="fediverse">
+    <h1>Mastodon</h1>
+    <a class="service-url" href="https://archaeo.social">archaeo.social</a>
+    <p>
+      Mastodon is a free and open-source microblogging platform, and is a main alternative
+      to Twitter/X. It's plugged into the "fediverse" — a series of independent yet
+      interoperable servers that exchange information using a common protocol, similar to
+      how email works across different institutions. archaeo.social counts hundreds of
+      archaeologists, ancient historians and interested laypeople as members.
+    </p>
+  </section>
 
-    </div>
+  <section class="service" id="matrix">
+    <h1>Matrix Chat</h1>
+    <a class="service-url" href="https://chat.archaeo.social">chat.archaeo.social</a>
+    <p>
+      Matrix is a decentralized instant-messaging platform and the popular open source
+      alternative to WhatsApp, Slack and Discord, with a strong focus on user privacy and
+      encryption. Aside from our general-purpose chatrooms, we host several
+      archaeology-related interest groups including SPAAM, SSLA, and Young Researchers in
+      Archaeometry. Perfect for maintaining connections forged during CAA!
+    </p>
+  </section>
 
-  </body>
+  <section class="service" id="forgejo">
+    <h1>Git Forge</h1>
+    <a class="service-url" href="https://forge.archaeo.dev">forge.archaeo.dev</a>
+    <p>
+      We maintain an independent software development forge using Forgejo, a free and open
+      source alternative to GitHub. Forgejo enables developers and researchers to track
+      changes to code, data and prose using Git, with additional tools for issue tracking,
+      project management and code review. A great platform for open and reproducible
+      research!
+    </p>
+  </section>
 
+  <section class="service" id="webring">
+    <h1>Webring</h1>
+    <a class="service-url" href="https://webring.archaeo.social">webring.archaeo.social</a>
+    <p>
+      A webring is an "old school" way to connect blogs following a common theme &ndash;
+      in this case, archaeology! By adding your blog to our directory and including
+      navigation buttons on your site, readers will be able to jump across the network,
+      making all of our work more discoverable.
+    </p>
+  </section>
+
+  <section class="service" id="hedgedoc">
+    <h1>Collaborative Editing</h1>
+    <a class="service-url" href="https://md.archaeo.dev">md.archaeo.dev</a>
+    <p>
+      Hedgedoc is a lightweight Markdown editor perfectly suited for collaborative writing
+      and note-taking. It's fully compliant with numerous Markdown extensions, including
+      graphs, diagrams and presentations. Great for pooling notes for the next conference
+      session!
+    </p>
+  </section>
+
+  <section class="service" id="more-services">
+    <h1>More to come...</h1>
+    <a class="discussion-url" href="https://github.com/orgs/archaeo-social/discussions">github.com/orgs/archaeo-social/discussions</a>
+    <p>
+      Please reach out with suggestions for additional software and services that match
+      our mandate to provide free, open source and federated infrastructure for scholarly
+      communication! Join our Open Collective group to support us with a one-time or
+      continuous donation.
+    </p>
+  </section>
+
+  <footer>
+    <section id="authors">
+      <div id="author-list">
+        <div class="author">
+          <img src="https://mstdn.archaeo.social/accounts/avatars/000/000/002/original/54f95f7766666700.jpg" alt="Joe Roe" />
+          <span class="author-name">Joe Roe</span>
+          <span class="author-affiliation">University of Copenhagen</span>
+          <a class="author-fediverse" href="https://archaeo.social/@joeroe">@joeroe@archaeo.social</a>
+        </div>
+        <div class="author">
+          <img src="https://mstdn.archaeo.social/accounts/avatars/109/333/035/928/545/004/original/28c5be5aa96d6bb0.jpg" alt="Zack Batist" />
+          <span class="author-name">Zack Batist</span>
+          <span class="author-affiliation">McGill University</span>
+          <a class="author-fediverse" href="https://archaeo.social/@zackbatist">@zackbatist@archaeo.social</a>
+        </div>
+        <div class="author">
+          <img src="https://cdn.masto.host/genomicsocial/accounts/avatars/109/309/590/728/622/207/original/524da371c7745a72.png" alt="James Fellows Yates" />
+          <span class="author-name">James Fellows Yates</span>
+          <span class="author-affiliation">nf-core &amp; SPAAM</span>
+          <a class="author-fediverse" href="https://genomic.social/@jfy133">@jfy133@genomic.social</a>
+        </div>
+        <div class="author">
+          <img src="https://mstdn.archaeo.social/accounts/avatars/000/001/636/original/753f9926c326fa11.jpg" alt="Andrea Titolo" />
+          <span class="author-name">Andrea Titolo</span>
+          <span class="author-affiliation">University of Bologna</span>
+          <a class="author-fediverse" href="https://archaeo.social/@andreatitolo">@andreatitolo@archaeo.social</a>
+        </div>
+        <div class="author" id="opencollective-author">
+          <img src="https://opencollective.com/static/images/opencollective-icon.svg" alt="Open Collective" />
+          <span class="author-name">The archaeo.social Community</span>
+          <span class="author-affiliation">Contributors via Open Collective</span>
+          <a class="author-opencollective" href="https://opencollective.com/archaeo-social">opencollective.com/archaeo-social</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="service-logos">
+      <img id="caa2026-logo" src="images/caa2026_logo.png" alt='CAA 2026, 31 March – 4th April, University of Vienna, Austria, "It&apos;s all about people"' />
+      <div class="brand-logos">
+        <img id="mastodon-logo" src="images/mastodon.svg" alt="Mastodon" />
+        <img id="matrix-logo" src="images/matrix.svg" alt="Matrix" />
+        <img id="hedgedoc-logo" src="images/hedgedoc.svg" alt="HedgeDoc" />
+        <img id="forgejo-logo" src="images/forgejo.svg" alt="Forgejo" />
+      </div>
+    </section>
+  </footer>
+
+</div>
+</body>
 </html>

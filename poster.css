@@ -1,38 +1,43 @@
 /* Fixed width A0 layout */
 @page {
-	size: A0 portrait;
+  size: A0 portrait;
 }
 
 @media screen {
-	body {
-		background: #333333;
-	}
-
-	#page {
-		width: 841mm;
-		height: 1189mm;
-		background: #ffffff;
-		display: block;
-		margin: 2em auto 2em auto;
-		position: relative;
-		box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.9);
-	}
+  body {
+    background: #333333;
+  }
+  #page {
+    width: 841mm;
+    height: 1189mm;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(6, calc(841mm / 6));
+    grid-template-rows: 1fr 4fr 2fr 2fr 1fr;
+    margin: 2em auto 2em auto;
+    position: relative;
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.9);
+  }
 }
 
 @media print {
-
-	body,
-	#page {
-		margin: 0;
-		width: 841mm;
-		height: 1189mm;
-	}
+  body {
+    margin: 0;
+  }
+  #page {
+    display: grid;
+    grid-template-columns: repeat(6, calc(841mm / 6));
+    grid-template-rows: 1fr 4fr 2fr 2fr 1fr;
+    margin: 0;
+    width: 841mm;
+    height: 1189mm;
+  }
 }
 
 /* Typography */
 body {
-	font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue, sans-serif;
-	font-size: 24pt;
+  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue, sans-serif;
+  font-size: 24pt;
 }
 
 h1,
@@ -41,188 +46,194 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 /* Layout */
 #page {
-	display: grid;
-	grid-template-columns: repeat(6, calc(841mm / 6));
-	grid-template-rows: 1fr 4fr 2fr 2fr 1fr;
+  display: grid;
+  grid-template-columns: repeat(6, calc(841mm / 6));
+  grid-template-rows: 1fr 4fr 2fr 2fr 1fr;
 }
 
 /* Header */
 header {
-	background: rgb(29, 30, 32);
-	color: white;
-	display: flex;
-	grid-column: span 6;
-	justify-content: space-between;
-	align-items: center;
-	padding: 30mm;
+  background: rgb(29, 30, 32);
+  color: white;
+  display: flex;
+  grid-column: span 6;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30mm;
 }
 
 header h1 {
-	font-size: 72pt;
-	transform: skew(-10deg);
+  font-size: 72pt;
+  transform: skew(-10deg);
 }
 
 header .subtitle {
-	font-size: 48pt;
+  font-size: 48pt;
 }
 
 .logotype {
-	display: inline-block;
-	font-weight: 900;
-	padding: 5mm 10mm;
-	text-transform: uppercase;
-	box-shadow: 3mm 3mm 0px #000;
+  display: inline-block;
+  font-weight: 900;
+  padding: 5mm 10mm;
+  text-transform: uppercase;
+  box-shadow: 3mm 3mm 0px #000;
 }
 
 #logotype-archaeo-social {
-	background: #563ACC;
+  background: #563ACC;
 }
 
 #logotype-archaeo-dev {
-	background: #eb6420;
+  background: #eb6420;
 }
 
 #header-logo {
-	height: 120mm;
-}
-
-#caa2026-logo {
-	height: 60mm;
-}
-
-#mastoson-logo {
-	height: 60mm;
-}
-
-#matrix-logo {
-	height: 30mm;
-}
-
-#forgejo-logo {
-	height: 30mm;
+  height: 120mm;
 }
 
 /* Abstract/introduction */
 #abstract {
-	font-size: 26pt;
-	grid-column: span 2;
-	padding: 30mm 15mm 30mm 30mm;
+  font-size: 26pt;
+  grid-column: span 2;
+  padding: 30mm 15mm 30mm 30mm;
 }
 
 #abstract h1 {
-	font-size: 40pt;
-	margin: 0;
+  font-size: 40pt;
+  margin: 0;
 }
 
 #abstract-body {
-	text-align: justify;
+  text-align: justify;
 }
 
 #abstract-body h2 {
-	font-size: 32pt;
+  font-size: 32pt;
 }
 
 #abstract-refs {
-	font-size: 18pt;
+  font-size: 18pt;
 }
 
 #abstract-refs h2 {
-	margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 #abstract-refs ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0 0 0 5mm;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 5mm;
 }
 
 #abstract-refs li {
-	text-indent: -5mm;
+  text-indent: -5mm;
 }
 
 /* Guestbook */
 #guestbook {
-	display: flex;
-	flex-direction: column;
-	grid-column: span 4;
-	padding: 30mm 30mm 30mm 15mm;
+  display: flex;
+  flex-direction: column;
+  grid-column: span 4;
+  padding: 30mm 30mm 30mm 15mm;
 }
 
 #guestbook h1 {
-	font-size: 36pt;
-	margin: 0;
+  font-size: 36pt;
+  margin: 0;
 }
-
 
 #guestbook .subtitle {
-	margin-top: 0;
+  margin-top: 0;
 }
 
-
 #guestbook-signatures {
-	border: 2mm dashed #999999;
-	flex: 1;
+  border: 2mm dashed #999999;
+  flex: 1;
 }
 
 /* Services */
 .service {
-	align-items: center;
-	background: rgb(29, 30, 32);
-	color: white;
-	display: flex;
-	flex-direction: column;
-	grid-column: span 2;
-	padding: 15mm 20mm;
-	justify-content: space-between;
+  background: rgb(29, 30, 32);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8mm;
+  grid-column: span 2;
+  padding: 10mm 20mm 10mm 20mm;
 }
 
 #matrix,
 #webring,
 #more-services {
-	background: rgb(55, 56, 62);
+  background: rgb(55, 56, 62);
 }
 
 .service h1 {
-	background: yellow;
-	color: rgb(29, 30, 32);
-	box-shadow: 3mm 3mm 0px #000;
-	display: inline-block;
-	font-size: 36pt;
-	font-weight: 900;
-	margin: 0;
-	padding: 5mm 10mm;
-	text-transform: uppercase;
-	transform: skew(-10deg);
+  background: yellow;
+  color: rgb(29, 30, 32);
+  box-shadow: 3mm 3mm 0px #000;
+  display: inline-block;
+  font-size: 36pt;
+  font-weight: 900;
+  padding: 5mm 10mm;
+  text-transform: uppercase;
+  transform: skew(-10deg);
+	margin-top: -10mm;
+}
+
+.service-url,
+.discussion-url {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 30pt;
+  color: yellow;
+  text-decoration: none;
+  border-bottom: 1px solid yellow;
+  padding-bottom: 1mm;
+  align-self: center;
+}
+
+.discussion-url {
+  font-size: 26pt;
+}
+
+.service-url:hover,
+.discussion-url:hover {
+  opacity: 0.8;
 }
 
 .service p {
-	text-align: justify;
-	font-size: 26pt;
+  text-align: justify;
+  font-size: 26pt;
+  margin: 0;
 }
 
 .service a {
-	color: skyblue;
-	text-decoration: none;
+  color: skyblue;
+  text-decoration: none;
 }
 
 /* Footer */
 footer {
-	grid-column: span 6;
-	padding: 30mm;
+  grid-column: span 6;
+  padding: 30mm;
+  position: relative;
 }
 
 #author-list {
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 10rem;
   flex-wrap: wrap;
-	justify-content: center;
-	margin-bottom: 5rem;
+  justify-content: center;
+  margin-bottom: 5rem;
 }
 
 .author {
@@ -238,18 +249,19 @@ footer {
   height: 240px;
   border-radius: 50%;
   object-fit: cover;
+	margin-bottom: 2rem;
 }
 
 #service-logos {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  gap: 3rem;
   padding: 1.5rem 0;
+  position: relative;
 }
 
 #caa2026-logo {
+  height: 160px;
   position: absolute;
   left: 0;
 }
@@ -258,6 +270,11 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 3rem;
+  gap: 5rem;
   margin: 0 auto;
+}
+
+#service-logos .brand-logos img {
+  height: 80px;
+  width: auto;
 }
