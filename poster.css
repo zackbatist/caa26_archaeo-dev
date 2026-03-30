@@ -84,20 +84,40 @@ header .subtitle {
 	height: 120mm;
 }
 
+#caa2026-logo {
+	height: 60mm;
+}
+
+#mastoson-logo {
+	height: 60mm;
+}
+
+#matrix-logo {
+	height: 30mm;
+}
+
+#forgejo-logo {
+	height: 30mm;
+}
+
 /* Abstract/introduction */
 #abstract {
-	font-size: 18pt;
+	font-size: 26pt;
 	grid-column: span 2;
 	padding: 30mm 15mm 30mm 30mm;
 }
 
 #abstract h1 {
-	font-size: 64pt;
+	font-size: 40pt;
 	margin: 0;
 }
 
 #abstract-body {
 	text-align: justify;
+}
+
+#abstract-body h2 {
+	font-size: 32pt;
 }
 
 #abstract-refs {
@@ -176,4 +196,50 @@ header .subtitle {
 footer {
 	grid-column: span 6;
 	padding: 30mm;
+}
+
+#author-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 5rem;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.25rem;
+}
+
+.author img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#service-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 1.5rem 0;
+}
+
+#caa2026-logo {
+  position: absolute;
+  left: 0;
+}
+
+#service-logos .brand-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  margin: 0 auto;
 }
